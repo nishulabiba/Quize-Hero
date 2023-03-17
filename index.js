@@ -108,7 +108,8 @@ document.querySelector("#submit").addEventListener("click", () => {       //fixe
   }
 
   // data setting on local storage and getting data from local storage
-  let storage = JSON.parse(localStorage.getItem("result"));
+
+  let storage = JSON.parse(localStorage.getItem("results")); //fixed
   if (storage) {
     localStorage.setItem(
       "results",
